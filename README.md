@@ -89,13 +89,13 @@ pip install .
 - To use the CLI, navigate to the project directory and run
 
 ```bash
-python -m app.main --files [file1 file2 ...] --output [output_dir] --key [encryption_key] [encrypt|decrypt]
+python -m app.main -e/-d --output [output_dir] --password [password] [file1 file2 ...]
 ```
 
-- --files: List of files to encrypt or decrypt.
 - --output: Directory to save the processed files.
 - --key: Encryption/Decryption key.
-- encrypt|decrypt: Choose between encryption or decryption.
+- -e/-d: Choose between encryption or decryption.
+- --password: Set the password
 
 ### Graphical User Interface (GUI)
 
@@ -112,21 +112,21 @@ python -m app.main --gui
 ### Encrypt Files via CLI
 
 ```bash
-python -m app.main encrypt --files example.txt --output /path/to/output --key s8cr8tkey
+python -m app.main --encrypt  --output /path/to/output --password s8cr8tkey example.txt
 ```
 
 ```bash
-python -m app.main encrypt --files example.txt --output /path/to/output --zip --key s8cr8tkey
+python -m app.main --encrypt --output /path/to/output --zip --password s8cr8tkey  example.txt 
 ```
 
 ### Decrypt Files via CLI
 
 ```bash
-python -m app.main decrypt --files example.txt.encrypted --output /path/to/output --key s8cr8tkey
+python -m app.main --decrypt --output /path/to/output --password s8cr8tkey example.txt.encrypted 
 ```
 
 ```bash
-python -m app.main decrypt --files example.zip --zip --output /path/to/output --key s8cr8tkey
+python -m app.main --decrypt  --zip --output /path/to/output --password s8cr8tkey example.zip
 ```
 
 ### Launch GUI
