@@ -9,7 +9,7 @@
   - [Prerequisites](#prerequisites)
   - [Install Dependencies](#install-dependencies)
   - [Install Dependencies](#install-dependencies)
-- [Usage]
+- [Usage](#usage)
   - [Command-Line Interface (CLI)](#command-line-interface-cli)
   - [Graphical User Interface (GUI)](#graphical-user-interface-gui)
 - [Encryption Key Management](#encryption-key-management)
