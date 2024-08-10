@@ -1,0 +1,2 @@
+class INVALIDKEYORALGORITHM(Exception):
+    pass
